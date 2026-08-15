@@ -1,11 +1,12 @@
 const reverseString = function(phrase) {
-    let chars = phrase.length;
+    let chars = phrase.split("");
     let string = "";
-    for (let i=chars; i > 0; i--) {
-        string += phrase.substring(i,1)
+    for (let i=chars.length; i > 0; i--) {
+        string += chars[i-1]
     }
     return string
 };
+
 
 // Do not edit below this line
 module.exports = reverseString;
